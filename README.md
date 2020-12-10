@@ -9,5 +9,5 @@
 
 ![](/assets/imgs/prototype.png)
 
-> Join me onTwitter using this link: [LinkedIn](https://www.twitter.com/JuniorOreol/)
-> Join me on LinkedIn using this link: [LinkedIn](https://www.linkedin.com/in/oreolnoumodong/)
+> Join me on: [LinkedIn](https://www.twitter.com/JuniorOreol/),
+> [Twitter](https://www.linkedin.com/in/oreolnoumodong/)
