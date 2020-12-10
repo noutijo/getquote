@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <!-- Place this data between the <head> tags of your website -->
+    <title>getquote | Welcome</title>
+    <meta name="description" content="Get randomly quote(s)." />
+
+    <!--Tab icon-->
+    <link rel="icon" href="./assets/icons/logo.png">
+
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@publisher_handle">
+    <meta name="twitter:title" content="getquote | Welcome">
+    <meta name="twitter:description" content="Get randomly quote(s).">
+    <meta name="twitter:creator" content="@author_handle">
+    <meta name="twitter:image" content="./assets/imgs/prototype.png">
+
+
+    <!-- Open Graph data for Facebook-->
+    <meta property="og:title" content="Get randomly quote(s)." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://getquote.epizy.com/" />
+    <meta property="og:image" content="./assets/imgs/prototype.png" />
+    <meta property="og:description" content="Get randomly quote(s)." />
+    <meta property="og:site_name" content="getquote" />
+    <meta property="fb:admins" content="Facebook numeric ID" />
+
+    <!--own css-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <!--FontAwesome for icons-->
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!----------------Principal section------------->
+     <!----------Navbar------------->
+    <div class="container-fluid m-0" style="background-color: #373E4C;height: 100%">
+        <div class="row menu-wraper">
+            <div class="col-md-2 col-sm-12 menu">
+                <div class="row">
+                    <div class="col-md-12 mt-3">
+                        <img class="logo" src="./assets/icons/logo.png" alt="getquote logo"> <span
+                            class="ml-lg-2">getquote</span>
+                    </div>
+                    <div class="col-md-12 mt-md-5 mr-md-5">
+                        <a href="./index.html#">Home</a>
+                    </div>
+                    <div class="col-md-12 mt-2  mr-md-5 mb-5">
+                        <a href="./about.html">About</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="background-color:white;">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 mt-5 ml-lg-5 mr-5">
+                                <p class="title-getquote">Generate your random quote</p>
+                            </div>
+                             <!----------Form------------->
+                            <div class="col-12">
+
+                                <div class="form-group-wrapper mt-lg-5 ml-lg-5 mr-ld-5 mb-5 p-3 p-lg-3">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Type of quote </label>
+                                        <select class="form-control" id="quoteType">
+                                            <option>Hard Work</option>
+                                            <option>Inspirational</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Number of quote</label>
+                                        <select class="form-control" id="quoteNumber">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary p-2 my-3 w-100"
+                                        onclick="generateQuotes()">Generate quote</button>
+                                    <button type="submit" class="btn btn-danger p-2 my-1 w-100"
+                                        onclick="resetQuotes()">Reset</button>
+                                </div>
+
+                            </div>
+                            <div class="col-12 main-getmore">
+                                <div class="getmore mb-md-5 mb-lg-3 ml-lg-5 p-2">
+                                    <div class="row p-3">
+                                        <div class="col-md-8 col-sm-12">
+                                            <p>Get more than three quotes
+                                                randomly.</p>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <img class="img-quote" src="./assets/icons/quote.png" alt="quote">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>color
+            </div>
+            <div class="col-md-6" style="background-color:white;">
+                <div class="row mt-5">
+                    <div id="content-quotes" class="col-md-12 text-center pr-lg-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="noQuoteMesssage" class="row">
+                                    <div class="col-12 mt-5">
+                                        <h6>Your random quote(s) will display here! </h6>
+                                    </div>
+                                    <div class="col-12 mt-5">
+                                        <img class="img-fluid" style="height: 50%; width: 50%;"
+                                            src="./assets/imgs/random.svg" alt="random">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <div id="displayQuotes">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 mt-2">
+                        <div class="row">
+                            <div class="col-6 copyright">
+                                Copyright &copy;
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script> getquote <span class="hearts">&hearts;</span> by <a class="nooutidev"
+                                    href="https://web.facebook.com/nooutidev"> nooutidev</a>
+                            </div>
+                               <!---------Social networs-------------->
+                            <div class="col-6 text-right pr-md-5 mb-5">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!----------------End Principal section------------->
+
+
+</body>
+<script src="./assets/js/P5_02_javascriptfile.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+
+</html>

@@ -1,0 +1,162 @@
+* {
+    font-family: 'Montserrat', 'Courier New', Courier, monospace;
+}
+
+body,html{
+	height: 100%;
+}
+/*menu area*/
+.menu,
+.menu a {
+    background-color: #373E4C;
+    color: white;
+    font-weight: 300;
+    transition: color 1;
+}
+
+.menu-wraper{
+	
+    height: 100%!important;
+}
+
+.menu a {
+    margin-left: 65px;
+}
+
+.menu a:hover {
+    text-decoration: none;
+    color: rgb(221, 220, 220);
+}
+
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+/*main content area*/
+
+.title-getquote {
+    font-size: 27px;
+    color: #373E4C;
+    opacity: 0.6;
+}
+
+.form-group-wrapper,
+.form-group-wrapper .getmore {
+    box-shadow: 0 5px 25px rgba(34, 60, 47, .15);
+    border-radius: 20px;
+}
+
+.form-group-wrapper label {
+    color: #373E4C;
+    opacity: 0.6;
+}
+
+.form-group-wrapper .btn-primary {
+    background-color: #373E4C;
+}
+
+.form-group-wrapper .btn-primary:hover {
+    background-color: #292f3a;
+}
+.form-group-wrapper .btn-danger{
+    background-color:#ff6584;
+}
+.form-group-wrapper .btn-danger:hover {
+    background-color: #f73a60;
+}
+
+.form-group-wrapper .btn {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgba(34, 60, 47, .15);
+}
+
+select {
+    border: none;
+    border-radius: 5px !important;
+    box-shadow: 0 5px 25px rgba(34, 60, 47, .1);
+    outline: none !important;
+    width: 100%;
+    padding: 15px;
+}
+	
+.getmore {
+    box-shadow: 0 5px 25px rgba(34, 60, 47, .15);
+    border-radius: 20px;
+    background-color: #373E4C;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.img-quote {
+    height: 60px;
+    width: 80px;
+    opacity: 0.3;
+}
+
+/*copyriht area*/
+.copyright {
+    font-size: 13px;
+    color: #373E4C;
+}
+.copyright a {
+   color: #ff6584;
+}
+.copyright a:hover {
+    color: #ff6584;
+}
+
+/*social networks icons*/
+.fa {
+    color: #373E4C;
+    height: 30px;
+    width: 30px;
+}
+
+.fa:hover {
+    color: #ff6584;
+}
+
+/* display result area*/
+#displayQuotes p {
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 5px 25px rgba(34, 60, 47, .15);
+}
+
+/*-------------- Medias Queries for Mobile --------------*/
+
+@media (max-width: 767.98px) {
+  
+    .main-getmore {
+        margin-bottom: 0%;
+    }
+  
+    }
+
+/*-------------- Medias Query for Tablettes --------------*/
+
+@media (max-width: 991.98px) {
+
+    .logo {
+        width: 20px;
+        height: 20px;
+    }
+
+    .title-getquote {
+        font-size: 15px;
+        color: #373E4C;
+        opacity: 0.6;
+    }
+
+     .main-getmore {
+         margin-bottom: 0%;
+     }
+
+    }
+
