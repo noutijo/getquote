@@ -1,5 +1,5 @@
 
-# **getquote** [![Build Status](https://travis-ci.org/facebook/flipper.svg?branch=master)](https://travis-ci.org/facebook/flipper)
+# **getquote** 
 
 `getquote`  is a tool that creates random quotes by assembling sentence fragments.
 
